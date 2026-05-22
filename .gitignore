@@ -2,6 +2,7 @@
 *.o
 demo
 *.out
+*.bin
 
 # IDE 和编辑器配置
 .settings/
@@ -9,13 +10,15 @@ demo
 .cproject
 .project
 .clang-format
+.idea/
+*.swp
+*.swo
+*~
 
 # 临时文件
 *.tmp
 *.temp
 *.log
-
-# 操作系统文件
 .DS_Store
 Thumbs.db
 
@@ -23,16 +26,51 @@ Thumbs.db
 build/
 dist/
 bin/
+out/
 
 # 缓存文件
 .cache/
 __pycache__/
+*.pyc
 
-# 库文件
+# 库文件（系统依赖，不应上传）
 *.so
 *.a
 *.dll
+*.lib
 
 # 配置文件（本地配置）
 local.conf
 *.local
+user_info_recorder.txt
+
+# server目录临时文件
+server/nf/
+server/1
+server/2
+server/2.jj
+server/s
+server/*.jpg
+
+# openChat目录测试资源（大文件或临时文件）
+openChat/resources/*.jpg
+openChat/resources/*.km
+
+# openChat_rebuild资源（字体文件可能涉及版权，不建议上传）
+openChat_rebuild/resources/fonts/
+openChat_rebuild/resources/*.bmp
+
+# other-tmp-file目录（测试代码，可选上传）
+other-tmp-file/*.o
+other-tmp-file/*.h
+
+# lvgl子模块构建产物
+lvgl/build/
+lvgl/*.o
+
+# lv_drivers子模块构建产物
+lv_drivers/*.o
+lv_drivers/display/*.o
+lv_drivers/indev/*.o
+lv_drivers/sdl/*.o
+lv_drivers/wayland/*.o

@@ -1,19 +1,23 @@
 # 指定文件的 git 属性
 
-# 文本文件设置
-*.c     text=auto
-*.h     text=auto
-*.md    text=auto
-*.yml   text=auto
-*.yaml  text=auto
-*.json  text=auto
-*.txt   text=auto
-*.sh    text=auto
-*.py    text=auto
-*.cmake text=auto
-Makefile text=auto
+# 文本文件设置（自动识别并处理换行符）
+*.c     text=auto eol=lf
+*.h     text=auto eol=lf
+*.md    text=auto eol=lf
+*.yml   text=auto eol=lf
+*.yaml  text=auto eol=lf
+*.json  text=auto eol=lf
+*.txt   text=auto eol=lf
+*.sh    text=auto eol=lf
+*.py    text=auto eol=lf
+*.cmake text=auto eol=lf
+*.mk    text=auto eol=lf
+Makefile text=auto eol=lf
+*.conf  text=auto eol=lf
+*.ini   text=auto eol=lf
+*.log   text=auto eol=lf
 
-# 二进制文件设置
+# 二进制文件设置（不进行 diff 和换行符转换）
 *.jpg   binary
 *.jpeg  binary
 *.png   binary
@@ -21,8 +25,19 @@ Makefile text=auto
 *.gif   binary
 *.ttf   binary
 *.ttc   binary
+*.otf   binary
+*.ico   binary
+*.svg   binary
+*.pdf   binary
+*.zip   binary
+*.tar   binary
+*.gz    binary
+*.xz    binary
 
-# 换行符设置
-*.c     eol=lf
-*.h     eol=lf
-*.md    eol=lf
+# LVGL 特定文件
+lv_conf.h text=auto eol=lf
+lv_drv_conf.h text=auto eol=lf
+
+# 构建脚本
+Makefile text=auto eol=lf
+*.mk text=auto eol=lf
