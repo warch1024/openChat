@@ -1,0 +1,28 @@
+# 指定文件的 git 属性
+
+# 文本文件设置
+*.c     text=auto
+*.h     text=auto
+*.md    text=auto
+*.yml   text=auto
+*.yaml  text=auto
+*.json  text=auto
+*.txt   text=auto
+*.sh    text=auto
+*.py    text=auto
+*.cmake text=auto
+Makefile text=auto
+
+# 二进制文件设置
+*.jpg   binary
+*.jpeg  binary
+*.png   binary
+*.bmp   binary
+*.gif   binary
+*.ttf   binary
+*.ttc   binary
+
+# 换行符设置
+*.c     eol=lf
+*.h     eol=lf
+*.md    eol=lf
